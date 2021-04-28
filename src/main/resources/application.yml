@@ -1,24 +1,7 @@
 spring:
   application:
     name: Api Gateway
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-      hibernate.cache.use_query_cache: false
-      hibernate.generate_statistics: false
-      hibernate.temp.use_jdbc_metadata_defaults: false
-      hibernate.jdbc.lob.non_contextual_creation: true
-  datasource:
-    url: jdbc:mysql://localhost:3308/users?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    type: com.zaxxer.hikari.HikariDataSource
-    username: root
-    password: rootpw
 
-patient.api.url: http://localhost:8081
-note.api.url: http://localhost:8082
-risk.api.url: http://localhost:8083
+patient.api.url: http://patientapi:8081
+note.api.url: http://notesapi:8082
+risk.api.url: http://riskapi:8083
